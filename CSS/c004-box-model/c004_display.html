@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    
+    <style>
+        .block {
+            border: solid;
+        }
+        
+        .inline {
+            border: solid;
+            display: inline;
+        }
+        .inline-block {
+            border: solid;
+            display: inline-block
+        }
+        .none {
+            border: solid;
+            display: none;
+        }
+        .disapear {
+            border: solid;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>block height: 0</p>
+    <div class="block"></div>
+    
+    <p>inline</p>
+    <p class="block"></p><div class="inline"></div>
+    
+    <p>inline-block: </p>
+    <div class="inline-block"></div>
+    
+    <p>display is none</p>
+    <div class="none"></div>
+    
+    <p>visibility</p>
+    <div class="disapear"></div>
+    
+    <p>footer</p>
+</body>
+</html>
