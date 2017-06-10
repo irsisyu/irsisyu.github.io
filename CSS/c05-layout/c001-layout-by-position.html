@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout By Position</title>
+    <style>
+        #page {
+            border: double blue;
+            position: relative;
+            
+            overflow: auto;
+        }
+        
+        #content {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 300px;
+            border: double;
+
+        }
+        
+        article {
+            border: solid 1px;
+            height: 33%;
+        }
+    </style>
+</head>
+<body>
+   
+   <div id="page">
+       <nav>
+           <ul>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Products</a></li>
+               <li><a href="#">Blog</a></li>
+           </ul>
+       </nav>
+       <div id="content">
+           <article>Its NOT okey to be silly.</article>
+           <article>Its NOt okey to play video games.</article>
+           <article>Its NOT okey to waste time.</article>
+       </div>
+       
+    </div>
+</body>
+</html>
