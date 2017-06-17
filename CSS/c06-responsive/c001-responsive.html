@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive</title>
+    <style>
+        button {
+            width: 24%;
+            background-color: violet;
+            color: white;
+        }
+        
+         @media screen and (max-width:400px) {
+            button {
+                display: block;
+                margin: auto 10px;
+                width: 200px;
+                height: 40px;
+            }
+        }
+        
+        @media screen and (min-width:800px) {
+            button {
+                width: 190px;
+                background-color: darkturquoise;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>one</button>
+    <button>two</button>
+    <button>three</button>
+    <button>four</button>
+</body>
+</html>

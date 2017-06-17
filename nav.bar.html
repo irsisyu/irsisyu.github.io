@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar</title>
+    <style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+        #page {
+            border: solid 1px skyblue;
+            background-color: skyblue;
+        }
+        #content {
+            background-color: skyblue;
+        }
+        nav {
+			font-size: 2em;
+			padding: 10px;
+        }
+        article {
+            border: solid 1px skyblue;
+        }
+		
+		@media screen and (min-width:680px) {
+			nav, #content {
+				display: inline-block;
+			}
+			#content {
+				position: absolute;
+				right: 10px;
+				margin: 18px;
+			}
+		}
+    </style>
+</head>
+<body>
+   <div id="page">
+       <nav>
+           <ul>Teens Programing</ul>
+       </nav>
+       <div id="content">
+           <article>Techologies Courses About Contact</article>
+       </div>
+   </div>
+    
+</body>
+</html>
