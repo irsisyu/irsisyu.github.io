@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <style>
+        div {
+            color: skyblue;        
+        }
+        div span {
+            color: darksalmon;
+        }
+        div>p {
+            color: darkviolet;
+        }
+        #words {
+            color: salmon;
+        }
+        .sentence {
+            color: black;
+        }
+        [data='data'] {
+            color: skyblue;
+        }
+        li:first-child {
+            color: darkmagenta;
+        }
+        li:nth-child(2) {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+  
+   <div id="words" class="sentences" data="data">Life is not always funny, but you have to make it funny.
+       <p>June <span>17</span></p>
+   </div>
+   
+   <ul>
+       <li>About</li>
+       <li>Blog</li>
+       <li>Team</li>
+   </ul>
+    
+</body>
+</html>
