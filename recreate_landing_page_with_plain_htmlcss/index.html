@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Screenshot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: gray;
+        }
+        
+        #page {
+            border: solid 1px white;
+            background-color: white;
+        }
+        
+        #content {
+            background-color: white;
+        }
+        
+        nav {
+            font-size: 2em;
+            padding: 10px;
+        }
+        
+        article {
+            border: solid 1px white;
+        }
+        
+        @media screen and (min-width:680px) {
+            nav,
+            #content {
+                display: inline-block;
+            }
+            #content {
+                position: absolute;
+                right: 10px;
+                margin: 18px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <nav>
+            <ul>Start Bootstrap</ul>
+        </nav>
+        <div id="content">
+            <article>About Service Contact</article>
+        </div>
+    </div>
+
+    <img src="img/intro-bg.jpg" alt="">
+</body>
