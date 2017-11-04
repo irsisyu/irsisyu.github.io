@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        #navbar {
+            padding: 20px;
+            font-family: sans-serif;
+            position: fixed;
+            width: 100%
+        }
+        
+        #logo {
+            font-size: 20px;
+        }
+        
+        nav {
+            margin-top: 2px;
+        }
+        
+        #logo,
+        nav {
+            display: inline-block;
+        }
+        
+        nav li {
+            display: inline-block;
+        }
+        
+        nav li a {
+            margin-left: 30px;
+            text-decoration: none;
+            font-size: 20px;
+            color: grey;
+        }
+        
+        nav li a: hover {
+            color: black;
+        }
+        
+        nav {
+            position: absolute;
+            right: 30px;
+        }
+        
+        header {
+            padding: 180px 100px;
+            text-align: center;
+            background-image: url(recreate_landing_page_with_plain_htmlcss/img/intro-bg.jpg);
+            background-size: cover;
+            color: white;
+        }
+        
+        #title,
+        #subtitle,
+        hr {
+            margin-bottom: 10px;
+        }
+        
+        #btngroup a {
+            text-decoration: none;
+            color: white;
+            width: 100px;
+            padding: 1px 8px;
+            background-color: gray;
+        }
+        
+        hr {
+            width: 300px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo">Start Boostrap</div>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1 id="title">Landing page</h1>
+        <h3 id="subtitle">A Template by Start Bootstrap</h3>
+        <hr>
+        <div id="btngroup">
+            <a href="#">Twittter</a>
+            <a href="#">Githube</a>
+            <a href="#">Linkdin</a>
+        </div>
+    </header>
+
+</body>
+</html>
