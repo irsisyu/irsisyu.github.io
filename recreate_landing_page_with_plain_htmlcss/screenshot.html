@@ -2,58 +2,388 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Screenshot</title>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Start Bootstrap</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="device-mockups/device-mockups.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            color: gray;
+        /*		custom navbar */
+        
+        .navbar-default .navbar-brand {
+            color: black;
+            font-family: bold;
         }
         
-        #page {
-            border: solid 1px white;
+        .navbar-default .navbar-nav>li>a {
+            color: black;
+        }
+        
+        .navbar-default .navbar-nav>li>a:focus,
+        .navbar-default .navbar-nav>li>a:hover {
+            color: mediumpurple;
+            background-color: transparent;
+        }
+        
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: black;
+        }
+        
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
             background-color: white;
         }
         
-        #content {
+        .navbar-default .navbar-brand:focus,
+        .navbar-default .navbar-brand:hover {
+            color: mediumorchid;
             background-color: white;
         }
         
-        nav {
-            font-size: 2em;
-            padding: 10px;
+        .navbar {
+            margin-bottom: 0;
+        }
+        /*		banner */
+        
+        .banner {
+            background: url(img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);
+            padding: 150px 0;
         }
         
-        article {
-            border: solid 1px white;
+        .intro-stc {
+            text-align: center;
+            color: lightgrey;
+            font-size: 50px;
+            font-weight: lighter;
+            text-align: left;
+            padding: 0 100px;
         }
         
-        @media screen and (min-width:680px) {
-            nav,
-            #content {
-                display: inline-block;
-            }
-            #content {
-                position: absolute;
-                right: 10px;
-                margin: 18px;
-            }
+        #st-btn {
+            border: solid 1px lightgrey;
+            color: lightgray;
+            border-radius: 25px;
+            display: block;
+            width: 250px;
+            padding: 15px 32px;
+            margin: 50px auto;
+        }
+        
+        .device-wrapper {
+            margin: auto;
+        }
+        
+        .discover {
+            background-color: #ffc048;
+        }
+        
+        #start {
+            padding: 100px 0;
+        }
+        
+        .start-stc {
+            text-align: center;
+            color: #1c1b1b;
+            font-size: 60px;
+            font-weight: lighter;
+            font-family: sans-serif;
+            padding: 0 50px;
+        }
+        
+        .start-intr {
+            text-align: center;
+            color: #1c1b1b;
+            font-size: 20px;
+            font-family: sans-serif;
+            padding: 0 20px;
+        }
+        /*unlimited*/
+        
+        #limit {
+            padding: 100px 0;
+        }
+        
+        .limit-stc {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 50px;
+            font-weight: lighter;
+            padding: 0 50px;
+        }
+        
+        .limit-intr {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #a39e9e;
+        }
+        
+        .unlimited .device-wrapper {
+            margin-bottom: 90px;
+        }
+        
+        .feature {
+            text-align: center;
+        }
+        
+        .icon-screen-smartphone,
+        .icon-camera,
+        .icon-present,
+        .icon-lock-open {
+            font-size: 80px;
+            background: linear-gradient(to left, #7b4397, #dc2430);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 100px;
+        }
+        
+        .device {
+            font-size: 25px;
+            font-weight: 200;
+            margin-top: 8px;
+            font-family: sans-serif
+        }
+        
+        .ready {
+            font-size: 15px;
+            margin-top: 5px;
+            color: #a29e9e;
+        }
+        /*        stop */
+        
+        .stop {
+            background: url(img/bg-cta.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: brightness(75%);
+            /*			filter: grayscale(100%);*/
+            /*			filter:sepia();*/
+        }
+        
+        #waiting {
+            padding: 100px 0;
+        }
+        
+        .wait-stc {
+            text-align: left;
+            font-family: sans-serif;
+            font-size: 50px;
+            padding: 0 150px;
+        }
+        
+        #wait-stc {
+            border: solid 1px black;
+            color: black;
+            border-radius: 25px;
+            display: block;
+            width: 250px;
+            padding: 15px 45px;
+            /*            margin: 40px auto;*/
+            margin-left: 153px;
+        }
+        /*    we */
+        
+        .we {
+            background-color: #ffc048;
+        }
+        
+        #heart {
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .heart-stc {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 50px;
+            padding: 0 150px;
+        }
+        
+        .badges {
+            text-align: center;
+        }
+        
+        .badge-link img {
+            width: 200px;
+        }
+        
+        .icon-heart {
+            font-size: 40px;
+            background-color: red;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .icon-social-twitter {
+            /*            padding: 0 200px;*/
+            background: #64bef7;
+        }
+        
+        .icon-social-facebook {
+            /*            padding: 0 250px;*/
+            background: #2424a5;
+        }
+        
+        .icon-social-google {
+            /*            padding: 0 300px;*/
+            background: #b51f1f;
+        }
+        
+        .icon-social-google,
+        .icon-social-facebook,
+        .icon-social-twitter {
+            font-size: 50px;
+            display: inline-block;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
     </style>
 </head>
 
 <body>
-    <div id="page">
-        <nav>
-            <ul>Start Bootstrap</ul>
-        </nav>
-        <div id="content">
-            <article>About Service Contact</article>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+					menu <span class="fa fa-bars"></span>
+				</button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div id="intro">
+                    <div class="intro-stc">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</div>
+                    <a id="st-btn" href="">START NOW FOR FREE</a>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="device-wrapper">
+                    <div class="device" data-device="iPhone6Plus" data-orientation="portrait" data-color="white">
+                        <div class="screen embed-responsive">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YQHsXMglC9A" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="button">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
     </div>
 
-    <img src="img/intro-bg.jpg" alt="">
+    <div class="discover">
+        <div id="start">
+            <div class="start-stc">Discover what all the <br> buzz is about!</div>
+            <br>
+            <div class="start-intr">Our app is available on any mobile device! Download now to get started!</div>
+            <br> br
+            <div class="badges">
+                <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="unlimited">
+        <div id="limit">
+            <div class="limit-stc">Unlimited Features, Unlimited Fun</div>
+            <div class="limit-intr">Check out what you can do with this app theme!</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="device-wrapper">
+                    <div class="device" data-device="iPhone6Plus" data-orientation="portrait" data-color="white">
+                        <div class="screen embed-responsive">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YQHsXMglC9A" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="feature">
+                    <i class="icon-screen-smartphone"></i>
+                    <div class="device">Device Mockups</div>
+                    <div class="ready">Ready to use HTML/CSS device <br> mockups, no Photoshop required!</div>
+
+                    <i class="icon-camera"></i>
+                    <div class="device">Flexible Use</div>
+                    <div class="ready">Put an image, video, animation, or <br> anythng else in the screen!</div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="feature">
+                    <i class="icon-present"></i>
+                    <div class="device">Free to Use</div>
+                    <div class="ready">As always, this theme is free to <br> download and use for any purpose!</div>
+
+                    <i class="icon-lock-open"></i>
+                    <div class="device">Open Source</div>
+                    <div class="ready">Since thi theme is MIT licensed, you <br> can use it commercially!</div>
+                </div>
+            </div>
+        </div>
+        <!--
+		<br>
+		<br>
+		<br>
+		<br>
+-->
+    </div>
+
+    <div class="stop">
+        <div id="waiting">
+            <div class="wait-stc">Stop waiting.<br>Start building.</div>
+            <a id="wait-stc" href="">START NOW FOR FREE</a>
+        </div>
+    </div>
+
+    <div class="we">
+        <div id="heart">
+            <div class="heart-stc">
+                We<i class="icon-heart"></i>new friends!</div>
+            <div class="icon-social-twitter"></div>
+            <div class="icon-social-facebook"></div>
+            <div class="icon-social-google"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
+
+</html>
